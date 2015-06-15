@@ -1,0 +1,38 @@
+/* ###  FOOTER  #### */
+
+footer {
+  padding: 40px 0; 
+  background-color: $tell-light-light-gray;
+}
+
+footer h4 {
+  margin-bottom: 30px;
+}
+
+
+footer h6 {
+  font-weight: 300;
+  color: $tell-green;
+  line-height: 12px;
+  font-size: 0.9em;
+}
+
+
+
+footer p {
+  font-size: 0.8em;
+}
+
+
+footer p.cookie {
+  margin-left: 1.375rem;
+}
+
+
+
+@media #{$small-only} {
+    
+  footer {
+    text-align: center;
+  }
+}
