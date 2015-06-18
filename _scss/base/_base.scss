@@ -13,6 +13,13 @@ strong {
   color: black;
 }
 
+.page-title {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  color: $tell-green;
+}
+
 
 
 a img:hover {
@@ -40,3 +47,19 @@ a img:hover {
 .with-padding-bottom {
   padding-bottom: 60px;
 }
+
+
+#kontakt {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.kontakt-icon {
+  margin-right: 0.8em;
+  opacity: 0.6;
+}
+
+#kontakt h4 {
+  margin-bottom: 1em;
+}
+
