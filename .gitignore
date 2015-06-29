@@ -68,3 +68,4 @@ config.codekit
 ######################
 /bower_components
 /bower.json
+.bowerrc
