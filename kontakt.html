@@ -10,9 +10,9 @@ title: Kontakt
 </div>
 
 
-<section id="kontakt">
 
-<div class="row">
+
+<section id="kontakt" class="row">
   
   <div class="small-12 medium-6 columns">
     <h4>Finn oss</h4>
@@ -28,21 +28,20 @@ title: Kontakt
   
   <div class="small-12 medium-6 columns">
     <h4>Hva kan vi hjelpe med?</h4>
-   
-  <div class="row">
-    <div class="large-12 columns">
-      <form accept-charset="UTF-8" action="https://formkeep.com/f/cb1e99933f22" method="POST">
-      <input type="hidden" name="utf8" value="✓">
-      <input type="text" name="name" placeholder="Navn">
-      <input type="email" name="email" placeholder="Epost">
-      <textarea placeholder="Skriv her"></textarea>
-      <button class="knapp" type="submit">Send</button>
-      </form>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <form action="//formspree.io/cristerjb@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="http://192.168.1.244:5757/kontakt-takk">
+          <input type="hidden" name="_subject" value="Kontakt oss" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="text" name="name" placeholder="Navn">
+          <input type="email" name="_replyto" placeholder="Epost">
+          <textarea type="text" name="message" placeholder="Hva kan vi hjelpe med?"></textarea>
+          <button class="knapp" type="submit" value="Send">Send</button>
+        </form>
+      </div>
     </div>
   </div>
-  
-  </div>
-  
-</div>
   
 </section>  
