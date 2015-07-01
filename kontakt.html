@@ -3,41 +3,49 @@ layout: default
 title: Kontakt
 ---
 
-<div class="row">
-  <div class="small-12 columns">
-    <h2 class="page-title">Kontakt</h2>
-  </div>
-</div>
 
 
+<section id="butikken">
+  <h3>Kontakt oss</h3>
+  <a class="show-for-small-only knapp solid" href="tel:+4799316000"><img class="social-icon" src="img/icons/phone.svg">Ring oss</a>
+</section>
 
 
-<section id="kontakt" class="row">
+<section id="kontakt-info" class="row">
   
-  <div class="small-12 medium-6 columns">
-    <h4>Finn oss</h4>
-    <address>
-      Kvadrat Kjøpesenter <br>
-      Gamle Stokkavei 1 <br>
-      4313 Sandnes  
-    </address>
-    <a href="mailto:butikk@tellit.no">butikk@tellit.no</a> <br>
-    <a href="tel:+4799316000">99316000</a>
+  <div class="small-12 medium-5 columns">
+    <div class="finn-oss-container">
+      <h2>Finn oss</h2>
+      <address>
+        Kvadrat Kjøpesenter <br>
+        Gamle Stokkavei 1 <br>
+        4313 Sandnes  
+      </address>
+      <a href="mailto:butikk@tellit.no">butikk@tellit.no</a> <br>
+      <a href="tel:+4799316000">993 16 000</a>
+    </div>  
     
+    <div class="folg-oss-container">
+      <h2>Følg oss</h2>
+      <a href="https://www.facebook.com/tellit.no" target="_blank"><img class="social-icon" src="img/logoer/tell-facebook.svg" alt="Følg oss på Facebook" /></a>
+      <a href="https://instagram.com/tell_kvadrat/" target="_blank"><img class="social-icon" src="img/logoer/tell-instagram.svg" alt="Følg oss på Instagram" /></a>
+      <a href="https://twitter.com/tellit_no" target="_blank"><img class="social-icon" src="img/logoer/tell-twitter.svg" alt="Følg oss på Twitter" /></a>
+    </div>  
   </div>
   
-  <div class="small-12 medium-6 columns">
-    <h4>Hva kan vi hjelpe med?</h4>
+  
+  <div class="small-12 medium-7 columns">
+    <h2>Hva kan vi hjelpe med?</h2>
     
     <div class="row">
       <div class="large-12 columns">
         <form action="//formspree.io/cristerjb@gmail.com" method="POST">
-          <input type="hidden" name="_next" value="http://192.168.1.244:5757/kontakt-takk">
+          <input type="hidden" name="_next" value="http://192.168.1.244:5757/takk">
           <input type="hidden" name="_subject" value="Kontakt oss" />
           <input type="text" name="_gotcha" style="display:none" />
           <input type="text" name="name" placeholder="Navn">
           <input type="email" name="_replyto" placeholder="Epost" required>
-          <textarea type="text" name="message" placeholder="Hva kan vi hjelpe med?" required></textarea>
+          <textarea rows="5" type="text" name="message" placeholder="Hva kan vi hjelpe med?" required></textarea>
           <button class="knapp" type="submit" value="Send">Send</button>
         </form>
       </div>
@@ -45,3 +53,6 @@ title: Kontakt
   </div>
   
 </section>  
+
+
+

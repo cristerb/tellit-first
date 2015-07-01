@@ -1,0 +1,67 @@
+
+#kontakt-info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+#kontakt-info h2 {
+  margin-bottom: 1em;
+  color: black;
+}
+
+address {
+  padding-bottom: 15px;
+  font-style: normal;
+}
+
+.takk-tekst {
+  text-align: center;
+}
+
+.finn-oss-container {
+  margin-bottom: 1.87em;  // 30/16 = 1.87
+  
+  @media #{$small-only} {
+    font-size: 1.5em;
+  
+  }
+ }
+
+.folg-oss-container {
+   margin-bottom: 3.125em;  // 50/16 = 3.125
+}
+
+
+.social-icon {
+  margin-right: 6px;
+}
+
+#kontakt-info {
+  padding: 1.875em;  // 30px/16 = 1.875em
+  margin-bottom: 1.25em; // 20px/16 = 125em
+  
+    @media #{$small-only} {
+    text-align: center;
+  }
+}
+
+
+
+#butikken {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../img/kontakt/tell-butikken@2x.jpg);
+  background-size: cover;
+  min-height: 300px;
+  margin-bottom: 2em;
+  
+  
+  h3 {
+    color: white;
+    font-size: 4.5em;
+  }
+}
