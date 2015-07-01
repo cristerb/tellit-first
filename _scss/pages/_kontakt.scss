@@ -1,50 +1,42 @@
 
+
 #kontakt-info {
   max-width: 1000px;
+  padding: 1em;
+  margin-bottom: 1.875em; // 30px/16 = 1.875em
   margin: 0 auto;
+  
+  @media #{$small-only} {
+  text-align: center;  // Denne gjør at tekst i kontakt-info container blir align center kun på mobil.
+  font-size: 1.5em;
+  }
+  
+  
+    h2 {  //Kontakt-info H2
+      margin-bottom: 0.5em;   
+      color: black;
+  
+      @media #{$small-only} { 
+      font-size: 1.8em; //Kontakt-info H2 kun på mobil - Dette er tekster som Finn oss og Følg oss.
+      }
+ }
 }
 
 
-
-#kontakt-info h2 {
-  margin-bottom: 1em;
-  color: black;
-}
 
 address {
   padding-bottom: 15px;
   font-style: normal;
 }
 
-.takk-tekst {
-  text-align: center;
-}
 
 .finn-oss-container {
   margin-bottom: 1.87em;  // 30/16 = 1.87
-  
-  @media #{$small-only} {
-    font-size: 1.5em;
-  
-  }
  }
+
 
 .folg-oss-container {
    margin-bottom: 3.125em;  // 50/16 = 3.125
-}
-
-
-.social-icon {
-  margin-right: 6px;
-}
-
-#kontakt-info {
-  padding: 1.875em;  // 30px/16 = 1.875em
-  margin-bottom: 1.25em; // 20px/16 = 125em
-  
-    @media #{$small-only} {
-    text-align: center;
-  }
 }
 
 
@@ -60,7 +52,7 @@ address {
   margin-bottom: 2em;
   
   
-  h3 {
+  h1 {
     color: white;
     font-size: 4.5em;
   }
