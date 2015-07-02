@@ -1,27 +1,38 @@
 
 
-#kontakt-info {
-  max-width: 1000px;
-  padding: 1em;
-  margin-bottom: 1.875em; // 30px/16 = 1.875em
-  margin: 0 auto;
+.kontakt-touch-knapp-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
   
-  @media #{$small-only} {
-  text-align: center;  // Denne gjør at tekst i kontakt-info container blir align center kun på mobil.
-  font-size: 1.5em;
+  a {
+    margin-right: 0.4em;
+    margin-bottom: 1em;
   }
   
   
-    h2 {  //Kontakt-info H2
-      margin-bottom: 0.5em;   
-      color: black;
-  
-      @media #{$small-only} { 
-      font-size: 1.8em; //Kontakt-info H2 kun på mobil - Dette er tekster som Finn oss og Følg oss.
-      }
- }
 }
 
+
+#kontakt-info {
+  max-width: 1000px;
+  padding: 5em 1em;
+  margin: auto;
+
+  
+    h2 {  //Kontakt-info H2
+      margin-bottom: 0.5em;   
+      color: black; 
+    }
+  
+
+  @media #{$small-only} {  // Gjelder kun på mobil
+   h2 {font-size: 1.8em;}  // Kontakt-info H2 kun på mobil - Dette er tekster som Finn oss og Følg oss.
+   text-align: center;     // Denne gjør at tekst i kontakt-info container blir align center kun på mobil.
+   font-size: 1.2em;
+  }
+}
 
 
 address {
@@ -48,8 +59,8 @@ address {
   align-items: center;
   background-image: url(../../img/kontakt/tell-butikken@2x.jpg);
   background-size: cover;
+  background-position: top center;
   min-height: 300px;
-  margin-bottom: 2em;
   
   
   h1 {
@@ -57,3 +68,38 @@ address {
     font-size: 4.5em;
   }
 }
+
+
+#apningstider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: $tell-green;
+  padding: 0.5em;
+  line-height: 0.2em;
+  
+    h3 {
+      font-size: 1.9em;
+      color: White;
+      padding-right: 1em;
+      border-right: solid 1px white;
+    }
+  
+   p {
+     padding-left: 1.5em;
+     margin-top: 1em;
+     }
+  
+  
+ @media #{$small-only} {
+   h3 {font-size: 1em;}
+   p  {font-size: 0.8em;}
+ }
+  
+  
+}
+
+
+
+
