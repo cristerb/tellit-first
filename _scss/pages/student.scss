@@ -1,13 +1,12 @@
 
 
-#student-header {
+#student-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: $tell-light-light-gray;
-  margin-bottom: 3.75em; //60px
-  padding: 3em 1em;
+  padding: 4em 1em;
   
   img {
     margin-bottom: 0.8em;
@@ -24,60 +23,98 @@
       max-width: 65%;
     }
   }
-  
-  
 }
 
 
+
+.student-fordeler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  background-color: $tell-gray;
+  color: white;
+    
+  
+    h3 {
+      color: white;
+      font-size: 1.9em;
+      margin: 0.6em 0 1em 0;
+    }
+
+    h4 {
+      font-size: 1.5em;
+      color: white;
+      margin-bottom: 0.6em;
+      margin-left: 1.5em; 
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+  
+    li {
+      line-height: 2.5em;
+      
+      &:before {
+        content: url(/img/icons/done.svg);
+        margin-right: 0.625em; //10px
+      }
+      
+  }
+}
 
 
 
 #hvorfor-mac-container{
-
-  @media #{$medium-up} {
+  
+  margin-top: 4em;
+  
+  
+  @media #{$large-up} {
     max-width: 70%;
-    margin: 0 auto;
   }
   
   
-    h2 {
-      text-align: center;
-      color: $tell-green;
-      margin-bottom: 1.2em;
-    }
-  
+      h2 {
+        text-align: center;
+        color: $tell-green;
+        margin-bottom: 1.6em;
+      }
 }
+
 
 ul.hvorfor-mac-list {
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 
   
   @media #{$medium-up} { 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     text-align: left;
     
   }
   
-  h4 {
-    color: black;
-    font-size: 1.25em;
-  }
-  
-  
-  li {
-    padding: 1.5em;
-    list-style: none;
-    
-    
-    @media #{$medium-up} { 
-      flex: 1 0 40%;
-    }
-    
-    
+      h4 {
+        color: black;
+        font-size: 1.25em;
+      }
+
+
+      li {
+        padding: 0 1em;
+        margin-bottom: 2em;
+        list-style: none;
+
+
+        @media #{$medium-up} { 
+          flex-basis: 45%;
+        }
   }
 }
 
