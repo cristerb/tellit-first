@@ -1,32 +1,50 @@
 /* ###  PROMO  #### */
 
 #promo-container {
-  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $tell-light-light-gray;
   
   
-  .promo-box{
-    height: 190px;
-    overflow: hidden;
-    text-align: center;
-    padding: 20px;
 
+  
+  @media #{$medium-up} {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  
+}
+  
+  .promo-box{
+    display: flex;
+    color: $tell-gray;
+    padding: 1em 4em;
+    
+    
+    
       &:hover {
       opacity: 0.7;} 
-   }
+
+    
+      h2 {
+        font-size: 1.2em;
+        color: black;
+        margin: 1em 0 0 0;
+      }
+    
+    
+    img {
+      margin-right: 1em;
+      max-width: 3em;
+    }
 }
 
+
+
+
+
+
      
-  .promo-1 {
-
-  }
-
-  .promo-2 {
-
-  }   
-
-  .promo-3 { 
-
-  }   
-
-

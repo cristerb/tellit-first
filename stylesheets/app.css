@@ -4948,17 +4948,58 @@ ul.hvorfor-mac-list li {
 
 /* ###  PROMO  #### */
 #promo-container {
-  padding: 40px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f9f9f9;
 }
-#promo-container .promo-box {
-  height: 190px;
-  overflow: hidden;
-  text-align: center;
-  padding: 20px;
+@media only screen and (min-width: 40.0625em) {
+  #promo-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
-#promo-container .promo-box:hover {
+
+.promo-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #8d9095;
+  padding: 1em 4em;
+}
+.promo-box:hover {
   opacity: 0.7;
+}
+.promo-box h2 {
+  font-size: 1.2em;
+  color: black;
+  margin: 1em 0 0 0;
+}
+.promo-box img {
+  margin-right: 1em;
+  max-width: 3em;
 }
 
 /* ###  KNAPPER  #### */
