@@ -4,15 +4,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70%;
   
   a {
     margin-right: 0.4em;
     margin-bottom: 1em;
   }
-  
-  
-}
+}//kontakt-touch-knapp-container
 
 
 #kontakt-info {
@@ -31,8 +28,8 @@
    h2 {font-size: 1.8em;}  // Kontakt-info H2 kun på mobil - Dette er tekster som Finn oss og Følg oss.
    text-align: center;     // Denne gjør at tekst i kontakt-info container blir align center kun på mobil.
    font-size: 1.2em;
-  }
-}
+  }//@media
+}//kontakt-info
 
 
 address {
@@ -61,13 +58,14 @@ address {
   background-size: cover;
   background-position: top center;
   min-height: 300px;
+  text-align: center;
   
   
   h1 {
     color: white;
     font-size: 4.5em;
-  }
-}
+ }
+}//butikken
 
 
 #apningstider {
@@ -92,13 +90,11 @@ address {
      }
   
   
- @media #{$small-only} {
-   h3 {font-size: 1em;}
-   p  {font-size: 0.8em;}
- }
-  
-  
-}
+     @media #{$small-only} {
+       h3 {font-size: 1em;}
+       p  {font-size: 0.8em;}
+  }//@media
+}//apningstider
 
 
 

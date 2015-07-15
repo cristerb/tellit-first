@@ -3,29 +3,31 @@
 footer {
   padding: 90px 0 40px 0; 
   background-color: $tell-light-light-gray;
-}
+  
+   h4 {margin-bottom: 30px;}
+  
+  
+   h6 {
+      font-weight: 300;
+      color: $tell-green;
+      line-height: 12px;
+      font-size: 0.9em;
+      }
+  
+   p {
+      font-size: 0.8em;
+    }
+    
+  
+   p.cookie {
+      margin-left: 1.375rem;
+    }  
 
-footer h4 {
-  margin-bottom: 30px;
-}
+}//footer
 
 
-footer h6 {
-  font-weight: 300;
-  color: $tell-green;
-  line-height: 12px;
-  font-size: 0.9em;
-}
-
-
-
-footer p {
-  font-size: 0.8em;
-}
-
-
-footer p.cookie {
-  margin-left: 1.375rem;
+.footer-links a {
+  color: black;
 }
 
 
@@ -38,6 +40,3 @@ footer p.cookie {
 }
 
 
-.footer-links a {
-  color: black;
-}

@@ -4512,12 +4512,6 @@ strong {
   color: black;
 }
 
-/*.page-title {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  color: $tell-green;
-}*/
 a img:hover {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
@@ -4560,12 +4554,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 90px 0;
 }
-
 .landingpage h2 {
   margin-bottom: 40px;
   font-size: 2.8em;
 }
-
 .landingpage p {
   line-height: 1.7em;
   font-size: 1.2em;
@@ -4694,7 +4686,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  width: 70%;
 }
 .kontakt-touch-knapp-container a {
   margin-right: 0.4em;
@@ -4755,6 +4746,7 @@ address {
   background-size: cover;
   background-position: top center;
   min-height: 300px;
+  text-align: center;
 }
 #butikken h1 {
   color: white;
@@ -4814,12 +4806,15 @@ address {
           align-items: center;
   text-align: center;
   background-color: #f9f9f9;
-  padding: 4em 1em;
+  padding: 1em 2em 4em 2em;
 }
 #student-hero img {
   margin-bottom: 0.8em;
 }
-#student-hero h2 {
+#student-hero p {
+  margin-bottom: 2.5em;
+}
+#student-hero h1, #student-hero h2 {
   margin-bottom: 0.6em;
 }
 @media only screen and (min-width: 40.0625em) {
@@ -4842,7 +4837,7 @@ address {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3em;
+  padding: 2em 2em;
   background-color: #8d9095;
   color: white;
 }
@@ -4850,6 +4845,7 @@ address {
   color: white;
   font-size: 1.9em;
   margin: 0.6em 0 1em 0;
+  text-align: center;
 }
 .student-fordeler h4 {
   font-size: 1.5em;
@@ -4860,13 +4856,11 @@ address {
 .student-fordeler ul {
   list-style: none;
   margin: 0;
+  list-style-image: url(/img/icons/done.svg);
 }
 .student-fordeler li {
   line-height: 2.5em;
-}
-.student-fordeler li:before {
-  content: url(/img/icons/done.svg);
-  margin-right: 0.625em;
+  padding: 0.2em;
 }
 
 #hvorfor-mac-container {
@@ -4929,6 +4923,32 @@ ul.hvorfor-mac-list li {
   }
 }
 
+#bedrift-hero {
+  background-color: #f9f9f9;
+  padding: 2em 0 6em 0;
+  text-align: center;
+}
+#bedrift-hero img {
+  margin-bottom: 1.5em;
+}
+#bedrift-hero p {
+  margin-bottom: 3em;
+}
+
+.fordeler-container {
+  padding: 2em 2em;
+  background-color: #f3f3f3;
+  color: .fordeler-container tell-gray;
+}
+.fordeler-container h2 {
+  color: black;
+  margin-bottom: 1em;
+}
+.fordeler-container h3 {
+  font-size: 1.5em;
+  color: black;
+}
+
 /* ###  MAIN HERO  #### */
 #main-hero {
   text-align: center;
@@ -4937,7 +4957,7 @@ ul.hvorfor-mac-list li {
 /* ###  NYHETSBREV  #### */
 #nyhetsbrev {
   padding: 85px 0;
-  background-color: #f9f9f9;
+  background-color: white;
   text-align: center;
 }
 #nyhetsbrev h4 {
@@ -4946,8 +4966,8 @@ ul.hvorfor-mac-list li {
   font-size: 2em;
 }
 
-/* ###  PROMO  #### */
-#promo-container {
+/* ###  TJENESTER  #### */
+#tjenester-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4957,15 +4977,9 @@ ul.hvorfor-mac-list li {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #f9f9f9;
-  padding: 1em 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  #promo-container {
+  #tjenester-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4982,26 +4996,25 @@ ul.hvorfor-mac-list li {
   }
 }
 
-.promo-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.tjenester-box {
   color: #8d9095;
-  padding: 1em 4em;
-  border-right: solid 1px #f3f3f3;
+  padding: 0 5em;
+  border-right: 1px solid #f3f3f3;
 }
-.promo-box:hover {
+.tjenester-box:hover {
   opacity: 0.7;
 }
-.promo-box h2 {
-  font-size: 1.2em;
+.tjenester-box h2 {
+  font-size: 1.3em;
   color: black;
   margin: 1em 0 0 0;
 }
-.promo-box img {
+.tjenester-box img {
   margin-right: 1em;
-  max-width: 3em;
+  max-width: 4em;
+}
+.tjenester-box a {
+  color: #8d9095;
 }
 
 /* ###  KNAPPER  #### */
@@ -5030,40 +5043,37 @@ ul.hvorfor-mac-list li {
 }
 
 /* ###  ANBAFALTE PRODUKTER  #### */
-#anbefalt {
+#anbefalt-container {
   margin: 40px 0;
 }
-#anbefalt h3 {
+#anbefalt-container h3 {
   text-align: center;
   margin-bottom: 30px;
 }
-
-.product {
-  border: 1px solid #f3f3f3;
+#anbefalt-container .product {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
 }
-.product:hover {
+#anbefalt-container .product:hover {
   opacity: 0.7;
 }
-.product figcaption {
+#anbefalt-container .product figcaption {
   color: #14a449;
 }
 
-.new {
+/*.new {
   background-image: url("../img/home/anbefalt-produkter/nyhet-badge.png");
   background-position: 100% 0;
   background-repeat: no-repeat;
   background-size: 60px;
   position: relative;
-}
-
+}*/
 /* ###  BANNER BOTTOM HOME  #### */
 #product-banner-container {
-  margin: 30px 0;
+  margin: 5em 0;
 }
 
 /* ###  FOOTER  #### */
@@ -5071,24 +5081,24 @@ footer {
   padding: 90px 0 40px 0;
   background-color: #f9f9f9;
 }
-
 footer h4 {
   margin-bottom: 30px;
 }
-
 footer h6 {
   font-weight: 300;
   color: #14a449;
   line-height: 12px;
   font-size: 0.9em;
 }
-
 footer p {
   font-size: 0.8em;
 }
-
 footer p.cookie {
   margin-left: 1.375rem;
+}
+
+.footer-links a {
+  color: black;
 }
 
 @media only screen and (max-width: 40em) {
@@ -5096,10 +5106,6 @@ footer p.cookie {
     text-align: center;
   }
 }
-.footer-links a {
-  color: black;
-}
-
 /* ###  HEADER  #### */
 header {
   margin-bottom: 20px;
@@ -5108,3 +5114,5 @@ header img.menu-logo {
   margin: 8px 0 0 30px;
   max-width: 85px;
 }
+
+/*# sourceMappingURL=app.css.map */

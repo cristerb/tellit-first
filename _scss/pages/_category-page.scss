@@ -9,14 +9,14 @@
     margin-top: 0;
   }
   
-}
+}//category-page
 
 
 .category-header {
   text-align: center;
   margin-top: 3.5em;
   margin-bottom: 3em;
-}
+}//category-header
 
 
     .product-container {
@@ -50,8 +50,8 @@
      transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out; 
-   }
-}
+   }//img:hover
+}//product-container
 
 
  .category-grid {
@@ -92,7 +92,7 @@
       color: $tell-green;
       
     }
-}
+}//category-promo-container
 
 .category-promo-box {
   border-right: solid 1px $tell-light-gray;
@@ -108,8 +108,5 @@
     color: $tell-green;
     font-size: 2.2em;
   }
-  
-  
-  
-}
+}//category-accessories
 

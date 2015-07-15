@@ -1,20 +1,13 @@
-     // VARS
-
-     $tell-green  : #14a449;
-     $tell-light-gray: #f3f3f3;
-     $tell-light-light-gray: #f9f9f9;
-     $tell-gray   : #8d9095;
-     $gray-bg-landing: #f7f6f7;   
-
-
 
      @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300); 
+     @import "variables";
+     @import "mixins";
      @import "settings";
     
 
 //   @import "foundation";
 
-// Or selectively include components
+//   Or selectively include components
      @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
@@ -52,8 +45,11 @@
 //   "foundation/components/offcanvas",
      "foundation/components/visibility";
 
+    
+
      // BASE
-     @import "base/base";
+     @import "base";
+
 
      // PAGES
      @import "pages/landingpages";
@@ -61,10 +57,11 @@
      @import "pages/kontakt";
      @import "pages/student";
 
+
      // MODULES
      @import "modules/main-hero";
      @import "modules/nyhetesbrev";
-     @import "modules/promo";
+     @import "modules/tjenester";
      @import "modules/knapper";
      @import "modules/anbefalt-produkter";
      @import "modules/home-banner-bottom";
