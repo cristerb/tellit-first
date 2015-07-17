@@ -3718,7 +3718,7 @@ h6 {
 }
 
 hr {
-  border: solid #DDDDDD;
+  border: solid #f3f3f3;
   border-width: 1px 0 0;
   clear: both;
   height: 0;
@@ -4508,7 +4508,6 @@ th.hide-for-touch {
 }
 
 strong {
-  font-weight: 600;
   color: black;
 }
 
@@ -4547,6 +4546,10 @@ a img:hover {
 
 h1, h2, h3, h4, h5, h6 {
   color: #14a449;
+}
+
+.lysbg {
+  background-color: #f3f3f3;
 }
 
 /* ###  LANDINGPAGE  #### */
@@ -4766,16 +4769,16 @@ address {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  background-color: #8d9095;
+  color: #8d9095;
+  background-color: #f3f3f3;
   padding: 0.5em;
   line-height: 0.2em;
 }
 #apningstider h3 {
   font-size: 1.9em;
-  color: White;
+  color: #8d9095;
   padding-right: 1em;
-  border-right: solid 1px white;
+  border-right: solid 1px #8d9095;
 }
 #apningstider p {
   padding-left: 1.5em;
@@ -4823,44 +4826,30 @@ address {
   }
 }
 
-.student-fordeler {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2em 2em;
-  background-color: #8d9095;
-  color: white;
-}
-.student-fordeler h3 {
-  color: white;
-  font-size: 1.9em;
-  margin: 0.6em 0 1em 0;
+.action-banner {
   text-align: center;
+  padding: 9em 0;
+  background-attachment: fixed;
+  background-image: url(../../img/student/student-rabatt-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  border-bottom: solid 1px #f3f3f3;
 }
-.student-fordeler h4 {
-  font-size: 1.5em;
-  color: white;
-  margin-bottom: 0.6em;
-  margin-left: 1.5em;
+.action-banner img {
+  margin-right: 1.2em;
+  padding-bottom: 1.1em;
 }
-.student-fordeler ul {
-  list-style: none;
-  margin: 0;
-  list-style-image: url(/img/icons/done.svg);
+.action-banner p {
+  max-width: 600px;
+  margin: 0 auto;
 }
-.student-fordeler li {
-  line-height: 2.5em;
-  padding: 0.2em;
+.action-banner h3 {
+  color: #8d9095;
+  font-size: 2.2em;
+  margin: 0.6em 0 0.5em 0;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.4em;
 }
 
 #hvorfor-mac-container {
@@ -4871,10 +4860,11 @@ address {
     max-width: 70%;
   }
 }
-#hvorfor-mac-container h2 {
+#hvorfor-mac-container h3 {
   text-align: center;
   color: #14a449;
   margin-bottom: 1.6em;
+  font-size: 3em;
 }
 
 ul.hvorfor-mac-list {
@@ -4936,17 +4926,53 @@ ul.hvorfor-mac-list li {
 }
 
 .fordeler-container {
-  padding: 2em 2em;
-  background-color: #f3f3f3;
+  margin: 5em auto;
   color: .fordeler-container tell-gray;
+  max-width: 1200px;
 }
 .fordeler-container h2 {
-  color: black;
-  margin-bottom: 1em;
+  color: #14a449;
+  margin-bottom: 2em;
+  font-size: 3em;
 }
 .fordeler-container h3 {
   font-size: 1.5em;
   color: black;
+}
+
+#studentpakker-section {
+  margin: 5em 0;
+}
+#studentpakker-section hgroup {
+  margin-bottom: 6em;
+}
+#studentpakker-section h2 {
+  color: #14a449;
+  font-size: 3em;
+}
+#studentpakker-section h3 {
+  color: #8d9095;
+  font-size: 1.3em;
+}
+#studentpakker-section h4 {
+  margin-left: 20px;
+}
+#studentpakker-section p {
+  margin-left: 20px;
+  font-size: 1.1em;
+}
+#studentpakker-section ul {
+  list-style: none;
+  margin-left: 0;
+  list-style-image: url(/img/icons/done.svg);
+}
+#studentpakker-section li {
+  margin-left: 20px;
+}
+#studentpakker-section .studentpakker-tekst {
+  margin-top: 1em;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 /* ###  MAIN HERO  #### */

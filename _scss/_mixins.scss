@@ -1,8 +1,8 @@
 
 
 
-@mixin fordeler-ul {
+@mixin ul-med-checklist {
   list-style: none;
-  margin: 0;
+  margin-left: 0;
   list-style-image: url(/img/icons/done.svg);
 }

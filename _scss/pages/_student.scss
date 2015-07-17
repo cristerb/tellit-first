@@ -33,36 +33,38 @@
 
 
 
-.student-fordeler {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em 2em;
-  background-color: $tell-gray;
-  color: white;
+.action-banner {
+  text-align: center;
+  padding: 9em 0;
+  background-attachment: fixed;
+  background-image: url(../../img/student/student-rabatt-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  border-bottom: solid 1px $tell-light-gray;
+  
     
+    img {
+      margin-right: 1.2em;
+      padding-bottom: 1.1em;
+    }
+    
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
   
     h3 {
-      color: white;
-      font-size: 1.9em;
-      margin: 0.6em 0 1em 0;
-      text-align: center;
+      color: $tell-gray;
+      font-size: 2.2em;
+      margin: 0.6em 0 0.5em 0;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 0.4em;
+      
     }
 
-    h4 {
-      font-size: 1.5em;
-      color: white;
-      margin-bottom: 0.6em;
-      margin-left: 1.5em; 
-    }
 
-    ul {@include fordeler-ul;}
-  
-    li {
-      line-height: 2.5em;
-      padding: 0.2em;
-  }//li
-}//student-fordeler
+}//action-banner
 
 
 
@@ -75,10 +77,11 @@
     max-width: 70%;
   }
   
-      h2 {
+      h3 {
         text-align: center;
         color: $tell-green;
         margin-bottom: 1.6em;
+        font-size: 3em;
       }
 }//hvorfor-mac-container
 
@@ -133,13 +136,14 @@ ul.hvorfor-mac-list {
 }
 
 .fordeler-container {
-  padding: 2em 2em;
-  background-color: $tell-light-gray;
+  margin: 5em auto;
   color: &tell-gray;
+  max-width: 1200px;
   
   h2 {
-    color: black;
-    margin-bottom: 1em;
+    color: $tell-green;
+    margin-bottom: 2em;
+    font-size: 3em;
   }
   
   h3 {
@@ -148,5 +152,51 @@ ul.hvorfor-mac-list {
   }
   
 } //fordeler-container
+
+
+
+#studentpakker-section {
+  margin: 5em 0;
+  
+    hgroup {
+     margin-bottom: 6em;
+    }
+
+    h2 {
+      color: $tell-green;
+      font-size: 3em;
+    }
+  
+    h3 {
+      color: $tell-gray;
+      font-size: 1.3em;
+    }
+
+    h4 {
+     margin-left: 20px;
+    }
+
+    p{
+     margin-left: 20px;
+     font-size: 1.1em;  
+    }
+
+    ul {
+      @include ul-med-checklist;
+
+    }
+
+    li {
+      margin-left: 20px;
+    }
+
+
+    .studentpakker-tekst{
+      margin-top: 1em;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+} //studentpakker-section
 
 
